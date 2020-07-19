@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}The Great Django Blog{% endblock %}</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="Section-inner clearfix">
+            <nav>
+                <a href="/">The Great Django blog</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <a href="#">Career</a>
+            </nav>
+        </div>
+    </div>
+    {% block content %}
+    {% endblock %}
+
+    {% block footer %}
+    <div class="footer">
+        <div class="Section-inner clearfix">
+            <hr>
+            <p>&copy; The Great Django Footer</p>
+        </div>
+    </div>
+    {% endblock %}
+</body>
+</html>
